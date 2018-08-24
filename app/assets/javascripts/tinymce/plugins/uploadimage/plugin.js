@@ -60,7 +60,8 @@
         form.appendChild(createElement('input', {type: "hidden", name: "utf8", value: "✓"}));
         form.appendChild(createElement('input', {type: 'hidden', name: 'authenticity_token', value: getMetaContents('csrf-token')}));
         form.appendChild(createElement('input', {type: 'hidden', name: 'hint', value: ed.getParam("uploadimage_hint", "")}));
-
+        form.appendChild(createElement('input', {type: 'hidden', name: 'number_id', value: NUMBER_ID}));
+        
         var el = win.getEl();
         var body = document.getElementById(el.id + "-body");
 
